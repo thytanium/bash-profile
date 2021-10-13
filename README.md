@@ -6,7 +6,9 @@ My local .bash_profile file contents to speed up CLI interaction
 alias glog='git log --pretty=oneline --graph'
 alias gpull='git pull --no-verify origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpush='git push --no-verify origin $(git rev-parse --abbrev-ref HEAD)'
-alias gfetch='git fetch --prune'
+alias gf='git fetch --prune'
+alias grh='git reset --hard'
+alias grs='git reset --soft'
 
 # Docker commands
 alias dkr='docker compose'

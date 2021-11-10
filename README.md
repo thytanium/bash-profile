@@ -9,6 +9,7 @@ alias gpush='git push --no-verify origin $(git rev-parse --abbrev-ref HEAD)'
 alias gf='git fetch --prune'
 alias grh='git reset --hard'
 alias grs='git reset --soft'
+alias gstatus='git status -sb'
 
 # Docker commands
 alias dkr='docker compose'

@@ -3,13 +3,15 @@ My local .bash_profile file contents to speed up CLI interaction
 
 ```bash
 # Git commands
-alias glog='git log --pretty=oneline --graph'
-alias gpull='git pull --no-verify origin $(git rev-parse --abbrev-ref HEAD)'
-alias gpush='git push --no-verify origin $(git rev-parse --abbrev-ref HEAD)'
+alias glog='git log --oneline --graph'
+alias gpull='git pull origin $(git rev-parse --abbrev-ref HEAD)'
+alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
 alias gf='git fetch --prune'
 alias grh='git reset --hard'
 alias grs='git reset --soft'
 alias gs='git status -sb'
+alias gc='git checkout'
+alias gcb='git checkout -b'
 
 # Docker commands
 alias dkr='docker compose'
